@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:CoolBlog
+ApplicationCable	app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	m
+ApplicationCable	app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	m
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ApplicationJob	app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	c
+ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c
+ApplicationRecord	app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c
+ApplicationSystemTestCase	test/application_system_test_case.rb	/^class ApplicationSystemTestCase < ActionDispatch::SystemTestCase$/;"	c
+Channel	app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	c	class:ApplicationCable
+Connection	app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	c	class:ApplicationCable
+CoolBlog	config/application.rb	/^module CoolBlog$/;"	m
+CreateFriendlyIdSlugs	db/migrate/20180926102255_create_friendly_id_slugs.rb	/^class CreateFriendlyIdSlugs < migration_class$/;"	c
+CreatePosts	db/migrate/20180926102431_create_posts.rb	/^class CreatePosts < ActiveRecord::Migration[5.2]$/;"	c
+PagesController	app/controllers/pages_controller.rb	/^class PagesController < ApplicationController$/;"	c
+Post	app/models/post.rb	/^class Post < ApplicationRecord$/;"	c
+PostTest	test/models/post_test.rb	/^class PostTest < ActiveSupport::TestCase$/;"	c
+PostsController	app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	c
+PostsControllerTest	test/controllers/posts_controller_test.rb	/^class PostsControllerTest < ActionDispatch::IntegrationTest$/;"	c
+PostsHelper	app/helpers/posts_helper.rb	/^module PostsHelper$/;"	m
+PostsTest	test/system/posts_test.rb	/^class PostsTest < ApplicationSystemTestCase$/;"	c
+about	app/controllers/pages_controller.rb	/^ def about$/;"	f	class:PagesController
+change	db/migrate/20180926102255_create_friendly_id_slugs.rb	/^  def change$/;"	f	class:CreateFriendlyIdSlugs
+change	db/migrate/20180926102431_create_posts.rb	/^  def change$/;"	f	class:CreatePosts
+contact	app/controllers/pages_controller.rb	/^ def contact$/;"	f	class:PagesController
+create	app/controllers/posts_controller.rb	/^  def create$/;"	f	class:PostsController
+destroy	app/controllers/posts_controller.rb	/^  def destroy$/;"	f	class:PostsController
+edit	app/controllers/posts_controller.rb	/^  def edit$/;"	f	class:PostsController
+index	app/controllers/posts_controller.rb	/^  def index$/;"	f	class:PostsController
+new	app/controllers/posts_controller.rb	/^  def new$/;"	f	class:PostsController
+post_params	app/controllers/posts_controller.rb	/^    def post_params$/;"	f	class:PostsController
+set_post	app/controllers/posts_controller.rb	/^    def set_post$/;"	f	class:PostsController
+should_generate_new_friendly_id?	app/models/post.rb	/^  	def should_generate_new_friendly_id?$/;"	f	class:Post
+show	app/controllers/posts_controller.rb	/^  def show$/;"	f	class:PostsController
+system!	bin/setup	/^def system!(*args)$/;"	f
+system!	bin/update	/^def system!(*args)$/;"	f
+update	app/controllers/posts_controller.rb	/^  def update$/;"	f	class:PostsController
