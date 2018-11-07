@@ -20,12 +20,14 @@
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-        <%= link_to 'My posts', author_posts_path, class: "nav-link #{yield(:author)}" %>
-      </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
+          <% if author_signed_in? %>
+              <li class="nav-item">
+          <%= link_to 'My posts', authors_posts_path, class: "nav-link #{yield(:author)}" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "nav-link" %>
+        </li>
+        <% end %>
         </ul>
     </div>
 </nav>

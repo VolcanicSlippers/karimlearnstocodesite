@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
 
+  devise_for :authors
   root to: 'blog/posts#index'
 #expecting the actual name in the url, rather than what is seen is scope.
-namespace :author do
+namespace :authors do
  resources :posts	
 end
 
