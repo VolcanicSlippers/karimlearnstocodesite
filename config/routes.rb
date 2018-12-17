@@ -14,7 +14,6 @@ scope module: 'blog' do
   get 'posts' => 'posts#index', as: :posts
   get 'posts/:id' => 'posts#show', as: :post
 
-
   # 'posts/kassd' => params[:id] == 'kassd' 
 
 end
