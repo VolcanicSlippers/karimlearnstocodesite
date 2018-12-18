@@ -12,10 +12,17 @@
   <% end %>
 
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-4">
     <div class="card">
       <div class="card-block">
-        <h4 class="card-title"><%= yield(:page_title) %></h4>
+        <% if @post.new_record? %>
+        <h4 class="card-title">New post</h4>
+        <% else %>
+          <h4 class="card-title">
+            <b> Edit </b>
+            <span class="thin-text"><%= @post.title %></span>
+          </h4>
+          <% end %>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
@@ -38,13 +45,19 @@
         </li>
         <li class="list-group-item">
             <div class="actions">
-              <%= form.submit "Save blog post", class: 'btn btn-success btn-lg btn-block'%>
+              <%= form.submit "Save blog post", class: 'btn btn-success btn-block'%>
           </div>
         </li>
       </ul>
     </div>
+
+    <% if @post.persisted? %>  
+    <%= link_to 'Show', @post %> |
+    <% end %>
+    <%= link_to 'Back', authors_posts_path %>
+    
   </div>
-    <div class="col-md-9">
+    <div class="col-md-8">
       <div class="field">
       <%= form.text_area :body %>
     </div>
