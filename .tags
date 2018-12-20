@@ -7,6 +7,7 @@
 ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
 AddAuthorIdToPosts	db/migrate/20181107092951_add_author_id_to_posts.rb	/^class AddAuthorIdToPosts < ActiveRecord::Migration[5.2]$/;"	c
 AddBannerImageUrlToPosts	db/migrate/20181105143632_add_banner_image_url_to_posts.rb	/^class AddBannerImageUrlToPosts < ActiveRecord::Migration[5.2]$/;"	c
+AddPublishedToPosts	db/migrate/20181217154753_add_published_to_posts.rb	/^class AddPublishedToPosts < ActiveRecord::Migration[5.2]$/;"	c
 Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:CoolBlog
 ApplicationCable	app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	m
 ApplicationCable	app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	m
@@ -43,19 +44,24 @@ change	db/migrate/20180926102431_create_posts.rb	/^  def change$/;"	f	class:Crea
 change	db/migrate/20181105143632_add_banner_image_url_to_posts.rb	/^  def change$/;"	f	class:AddBannerImageUrlToPosts
 change	db/migrate/20181107092809_devise_create_authors.rb	/^  def change$/;"	f	class:DeviseCreateAuthors
 change	db/migrate/20181107092951_add_author_id_to_posts.rb	/^  def change$/;"	f	class:AddAuthorIdToPosts
+change	db/migrate/20181217154753_add_published_to_posts.rb	/^  def change$/;"	f	class:AddPublishedToPosts
 contact	app/controllers/blog/pages_controller.rb	/^	 def contact$/;"	f	class:Blog.PagesController
 create	app/controllers/authors/posts_controller.rb	/^  def create$/;"	f	class:Authors.PostsController
 destroy	app/controllers/authors/posts_controller.rb	/^  def destroy$/;"	f	class:Authors.PostsController
-display_day_published	app/models/post.rb	/^ def display_day_published$/;"	f	class:Post
+display_day_published	app/models/post.rb	/^	def display_day_published$/;"	f	class:Post
 edit	app/controllers/authors/posts_controller.rb	/^  def edit$/;"	f	class:Authors.PostsController
 index	app/controllers/authors/posts_controller.rb	/^  def index$/;"	f	class:Authors.PostsController
 index	app/controllers/blog/posts_controller.rb	/^    def index$/;"	f	class:Blog.PostsController
 new	app/controllers/authors/posts_controller.rb	/^  def new$/;"	f	class:Authors.PostsController
 post_params	app/controllers/authors/posts_controller.rb	/^    def post_params$/;"	f	class:Authors.PostsController
+publish	app/controllers/authors/posts_controller.rb	/^  def publish$/;"	f	class:Authors.PostsController
+publish	app/models/post.rb	/^	def publish$/;"	f	class:Post
 set_post	app/controllers/authors/posts_controller.rb	/^    def set_post$/;"	f	class:Authors.PostsController
 should_generate_new_friendly_id?	app/models/post.rb	/^  	def should_generate_new_friendly_id?$/;"	f	class:Post
 show	app/controllers/authors/posts_controller.rb	/^  def show$/;"	f	class:Authors.PostsController
 show	app/controllers/blog/posts_controller.rb	/^    def show$/;"	f	class:Blog.PostsController
 system!	bin/setup	/^def system!(*args)$/;"	f
 system!	bin/update	/^def system!(*args)$/;"	f
+unpublish	app/controllers/authors/posts_controller.rb	/^  def unpublish$/;"	f	class:Authors.PostsController
+unpublish	app/models/post.rb	/^	def unpublish$/;"	f	class:Post
 update	app/controllers/authors/posts_controller.rb	/^  def update$/;"	f	class:Authors.PostsController
